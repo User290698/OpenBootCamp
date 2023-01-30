@@ -1,0 +1,10 @@
+public class Main {
+  public static int sumarTresNumeros(int a, int b, int c) {
+    return a + b + c;
+  }
+
+  public static void main(String[] args) {
+    int resultado = sumarTresNumeros(1, 2, 3);
+    System.out.println("La suma de los tres números es: " + resultado);
+  }
+}
