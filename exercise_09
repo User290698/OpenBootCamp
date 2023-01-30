@@ -1,0 +1,85 @@
+//Genero la clase Persona con sus métodos SET y GET
+public class Persona {
+    private int edad;
+    private String nombre;
+    private String telefono;
+    
+    public int getEdad() {
+        return edad;
+    }
+    
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+    
+    public String getNombre() {
+        return nombre;
+    }
+    
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    public String getTelefono() {
+        return telefono;
+    }
+    
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+}
+
+
+//Creo la clase Cliente que hereda los datos de Persona
+public class Cliente extends Persona {
+    private double credito;
+    
+    public double getCredito() {
+        return credito;
+    }
+    
+    public void setCredito(double credito) {
+        this.credito = credito;
+    }
+}
+
+//En el main se crea el objeto de la clase anterior Cliente
+public static void main(String[] args) {
+    Cliente miCliente = new Cliente();
+    miCliente.setEdad(30);
+    miCliente.setNombre("Juan");
+    miCliente.setTelefono("555-555-5555");
+    miCliente.setCredito(1000.0);
+    
+    System.out.println("Edad: " + miCliente.getEdad());
+    System.out.println("Nombre: " + miCliente.getNombre());
+    System.out.println("Teléfono: " + miCliente.getTelefono());
+    System.out.println("Crédito: " + miCliente.getCredito());
+}
+
+//Luego se crea la clase Trabajador que también es heredado de Persona
+public class Trabajador extends Persona {
+    private double salario;
+    
+    public double getSalario() {
+        return salario;
+    }
+    
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+}
+
+//En el main se crea el objeto de la clase Trabajador
+public static void main(String[] args) {
+    Trabajador trabajador = new Trabajador();
+    trabajador.setNombre("Juan");
+    trabajador.setEdad(30);
+    trabajador.setTelefono("555-555-555");
+    trabajador.setSalario(2000);
+    
+    System.out.println("Nombre: " + trabajador.getNombre());
+    System.out.println("Edad: " + trabajador.getEdad());
+    System.out.println("Teléfono: " + trabajador.getTelefono());
+    System.out.println("Salario: " + trabajador.getSalario());
+}
