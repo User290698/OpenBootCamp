@@ -1,0 +1,53 @@
+public class Ejemplo {
+  public static void main(String[] args) {
+    //Asigno los valores iniciales para cada variable
+    int numeroIf = 5;
+    int numeroWhile = 0;
+    int numeroFor = 0;
+    String estacion = "verano";
+
+    // Genero la condicional if
+    if (numeroIf > 0) {
+      System.out.println(numeroIf + " es un número positivo");
+    } else if (numeroIf < 0) {
+      System.out.println(numeroIf + " es un número negativo");
+    } else {
+      System.out.println(numeroIf + " es igual a 0");
+    }
+
+    // Determino el bucle tipo while
+    while (numeroWhile < 3) {
+      numeroWhile++;
+      System.out.println("El valor de numeroWhile es " + numeroWhile);
+    }
+
+    // do while
+    do {
+      System.out.println("El bucle do while solo se ejecuta una vez");
+    } while (numeroWhile < 3);
+
+    // Para el bucle for se le limita como valor máximo <=3
+    for (int i = 0; i <= 3; i++) {
+      System.out.println("El valor de numeroFor es " + i);
+    }
+
+    // tipo Switch
+    switch (estacion) {
+      case "invierno":
+        System.out.println("Estamos en invierno");
+        break;
+      case "primavera":
+        System.out.println("Estamos en primavera");
+        break;
+      case "verano":
+        System.out.println("Estamos en verano");
+        break;
+      case "otoño":
+        System.out.println("Estamos en otoño");
+        break;
+      default:
+        System.out.println("La estación no es válida");
+        break;
+    }
+  }
+}
