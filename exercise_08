@@ -1,0 +1,47 @@
+//Creo la clase Persona con sus respectivas variables privadas y añado los métodos SET y GET para cada una.
+public class Persona {
+  private int edad;
+  private String nombre;
+  private long telefono;
+
+  public int getEdad() {
+    return edad;
+  }
+
+  public void setEdad(int edad) {
+    this.edad = edad;
+  }
+
+  public String getNombre() {
+    return nombre;
+  }
+
+  public void setNombre(String nombre) {
+    this.nombre = nombre;
+  }
+
+  public long getTelefono() {
+    return telefono;
+  }
+
+  public void setTelefono(long telefono) {
+    this.telefono = telefono;
+  }
+}
+
+//En el método main creo el objeto Persona y asigno los valores
+public static void main(String[] args) {
+  Persona persona = new Persona();
+  persona.setEdad(24);
+  persona.setNombre("Evelyn");
+  persona.setTelefono(999999999);
+
+  System.out.println("Edad: " + persona.getEdad());
+  System.out.println("Nombre: " + persona.getNombre());
+  System.out.println("Teléfono: " + persona.getTelefono());
+}
+
+//Luego de ejecutar, en consola mostraría lo siguiente
+Edad: 24
+Nombre: Evelyn
+Teléfono: 999999999
