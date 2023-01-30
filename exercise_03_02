@@ -1,0 +1,23 @@
+public class Coche {
+  private int numeroDePuertas;
+
+  public Coche(int numeroDePuertas) {
+    this.numeroDePuertas = numeroDePuertas;
+  }
+
+  public void incrementarNumeroDePuertas() {
+    this.numeroDePuertas++;
+  }
+
+  public int getNumeroDePuertas() {
+    return numeroDePuertas;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    Coche miCoche = new Coche(4);
+    miCoche.incrementarNumeroDePuertas();
+    System.out.println("El número de puertas del objeto miCoche es: " + miCoche.getNumeroDePuertas());
+  }
+}
